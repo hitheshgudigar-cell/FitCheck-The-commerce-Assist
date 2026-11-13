@@ -61,6 +61,20 @@ export const SuggestedChips: React.FC<SuggestedChipsProps> = ({
           "What are the active ingredients and dosage form?"
         ];
 
+      case 'footwear':
+        return [
+          "My foot length is 26.5 cm. Will UK-8 fit?",
+          "Are these suitable for wide feet / high arches?",
+          "What is the heel-to-toe drop specification?"
+        ];
+
+      case 'hardware':
+        return [
+          "Can this M8 anchor hold 100 kg on solid brick?",
+          "What drill bit diameter is required?",
+          "Is this suitable for outdoor exterior walls?"
+        ];
+
       default:
         return [
           "Will this fit my requirements?",

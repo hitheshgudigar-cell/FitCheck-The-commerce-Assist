@@ -198,35 +198,97 @@ export const AppShell: React.FC = () => {
 
             {/* Right: Ranked Results & Map (4 cols on lg) */}
             <aside className="lg:col-span-4 space-y-4">
-              {/* Filter Bar */}
-              <FilterBar
-                filters={filters}
-                onChange={setFilters}
-                resultCount={displayResults.length}
-              />
+              {discoveryMessages.length === 0 ? (
+                /* Initial State: Show Product Types & Guide instead of arbitrary large product list */
+                <div className="space-y-4 animate-in fade-in duration-200">
+                  <div className="p-4 sm:p-5 rounded-2xl border border-stone-200 dark:border-dark-border bg-white dark:bg-dark-card shadow-soft space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-teal-800 dark:text-teal-300 font-mono">
+                        <Sparkles size={14} className="text-teal-700 dark:text-teal-400" />
+                        <span>Product Types Supported</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-ink-500">6 categories</span>
+                    </div>
 
-              {/* Ranked Product Result Cards */}
-              <div className="space-y-3">
-                {displayResults.map(prod => (
-                  <ProductResultCard
-                    key={prod.id}
-                    product={prod}
-                    onWhyVerdict={handleWhyVerdict}
-                    onAskAboutProduct={handleAskAboutProduct}
+                    <p className="text-xs text-ink-600 dark:text-dark-inkMuted leading-relaxed">
+                      Select a product type below, then specify the exact product or model in the chat to run pre-purchase fit verification:
+                    </p>
+
+                    <div className="space-y-2">
+                      {[
+                        { name: 'Clothing & Apparel', desc: 'Dresses, kurtas, jackets', prompt: 'Black dress, size M, available near me today' },
+                        { name: 'Electronics & Accessories', desc: 'Printer cartridges, TV mounts, filters', prompt: 'Printer cartridge for HP DeskJet 2331' },
+                        { name: 'Furniture & Living', desc: 'Sofas, wardrobes, dining tables', prompt: 'Sofa that fits through an 80 cm door' },
+                        { name: 'Grocery & Pharmacy', desc: 'Dietary facts, gluten-free items', prompt: 'Gluten-free biscuits nearby' },
+                        { name: 'Footwear & Athletic', desc: 'Running shoes, hiking boots', prompt: 'SprintPro running shoes size 9' },
+                        { name: 'Hardware & Tools', desc: 'Anchor bolts, brackets, fasteners', prompt: 'TV wall mount for a 55 inch TV' },
+                      ].map((type, idx) => (
+                        <div
+                          key={idx}
+                          onClick={() => sendMessage(type.prompt)}
+                          className="p-2.5 rounded-xl border border-stone-200 dark:border-dark-border bg-stone-50/70 dark:bg-dark-cardMuted hover:border-teal-500 hover:bg-teal-50/40 dark:hover:bg-teal-950/20 cursor-pointer transition-all group flex items-center justify-between gap-2"
+                        >
+                          <div>
+                            <div className="text-xs font-bold text-ink-900 dark:text-dark-ink group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
+                              {type.name}
+                            </div>
+                            <div className="text-[11px] text-ink-500 dark:text-dark-inkMuted">
+                              {type.desc}
+                            </div>
+                          </div>
+                          <span className="text-[10px] font-mono text-teal-700 dark:text-teal-400 opacity-0 group-hover:opacity-100 transition-opacity font-semibold shrink-0">
+                            Specify product →
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Map Panel for Desktop */}
+                  <div className="h-72 w-full hidden md:block">
+                    <MapPanel
+                      stores={stores}
+                      userLocation={profile.location}
+                      radiusKm={filters.radius_km}
+                      selectedStoreId={selectedStoreId}
+                      onSelectStore={setSelectedStoreId}
+                    />
+                  </div>
+                </div>
+              ) : (
+                /* Post-Search State: Filter Bar + Ranked Results + Map */
+                <div className="space-y-4 animate-in fade-in duration-200">
+                  {/* Filter Bar */}
+                  <FilterBar
+                    filters={filters}
+                    onChange={setFilters}
+                    resultCount={displayResults.length}
                   />
-                ))}
-              </div>
 
-              {/* Map Panel for Desktop */}
-              <div className="h-80 w-full hidden md:block">
-                <MapPanel
-                  stores={stores}
-                  userLocation={profile.location}
-                  radiusKm={filters.radius_km}
-                  selectedStoreId={selectedStoreId}
-                  onSelectStore={setSelectedStoreId}
-                />
-              </div>
+                  {/* Ranked Product Result Cards */}
+                  <div className="space-y-3">
+                    {displayResults.map(prod => (
+                      <ProductResultCard
+                        key={prod.id}
+                        product={prod}
+                        onWhyVerdict={handleWhyVerdict}
+                        onAskAboutProduct={handleAskAboutProduct}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Map Panel for Desktop */}
+                  <div className="h-80 w-full hidden md:block">
+                    <MapPanel
+                      stores={stores}
+                      userLocation={profile.location}
+                      radiusKm={filters.radius_km}
+                      selectedStoreId={selectedStoreId}
+                      onSelectStore={setSelectedStoreId}
+                    />
+                  </div>
+                </div>
+              )}
             </aside>
           </div>
         ) : (

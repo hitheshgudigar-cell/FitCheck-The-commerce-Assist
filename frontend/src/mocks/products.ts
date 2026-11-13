@@ -297,5 +297,59 @@ export const MOCK_PRODUCTS: Product[] = [
       { id: "doc_clothing_aura_gown", name: "Aura Haute Collection Sizing Spec", type: "size_chart", pages: 3 }
     ],
     marketing_copy: "Floor-length floor-grazing formal gown with sweetheart neckline."
+  },
+  {
+    id: "prod_footwear_01",
+    name: "SprintPro Aero Running Shoes",
+    brand: "SprintPro Athletic",
+    category: "footwear",
+    price: 89.99,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+    variants: [
+      { sku: "SKU-SP-AERO-UK6", name: "UK-6", in_stock: true, qty: 3 },
+      { sku: "SKU-SP-AERO-UK7", name: "UK-7", in_stock: true, qty: 5 },
+      { sku: "SKU-SP-AERO-UK8", name: "UK-8", in_stock: true, qty: 4 },
+      { sku: "SKU-SP-AERO-UK9", name: "UK-9", in_stock: true, qty: 6 },
+      { sku: "SKU-SP-AERO-UK10", name: "UK-10", in_stock: false, qty: 0 }
+    ],
+    attributes: {
+      size_chart: {
+        "UK-6": [24.5, 25.0],
+        "UK-7": [25.1, 25.8],
+        "UK-8": [25.9, 26.6],
+        "UK-9": [26.7, 27.5],
+        "UK-10": [27.6, 28.3]
+      },
+      gender: "unisex",
+      source_doc: "doc_footwear_sprintpro (Page 2)"
+    },
+    docs: ["doc_footwear_sprintpro"],
+    doc_details: [
+      { id: "doc_footwear_sprintpro", name: "SprintPro Footwear Technical Fit Matrix", type: "size_chart", pages: 3 }
+    ],
+    marketing_copy: "Engineered for speed, energy return and seamless marathon performance on any road."
+  },
+  {
+    id: "prod_hw_anchor_01",
+    name: "Shield Anchor Bolt M8 Heavy-Duty",
+    brand: "ForgeTorque Fixings",
+    category: "hardware",
+    price: 14.50,
+    image_url: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+    variants: [
+      { sku: "SKU-FT-SA-M8-4PK", name: "M8 4-Pack", in_stock: true, qty: 25 }
+    ],
+    attributes: {
+      thread_size: "M8",
+      load_rating_kg: 150,
+      material: "Stainless Steel 304",
+      suitable_substrates: ["concrete", "solid brick", "stone"],
+      source_doc: "doc_hw_m8_anchor (Page 2)"
+    },
+    docs: ["doc_hw_m8_anchor"],
+    doc_details: [
+      { id: "doc_hw_m8_anchor", name: "ForgeTorque Structural Anchor Specifications", type: "spec_sheet", pages: 2 }
+    ],
+    marketing_copy: "Industrial-grade expanding anchor bolts for mounting heavy structural gates, machinery, and brackets."
   }
 ];
