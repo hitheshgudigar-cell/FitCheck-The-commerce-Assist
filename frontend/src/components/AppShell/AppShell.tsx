@@ -15,7 +15,8 @@ import { CitationSheet } from '../AnswerCard/CitationSheet';
 import { ReserveModal } from '../AnswerCard/ReserveModal';
 import { HowItWorksModal } from '../Modals/HowItWorksModal';
 import { ReportWrongAnswerModal } from '../Modals/ReportWrongAnswerModal';
-import { MapPin, Sliders, Sparkles, X, ChevronRight, Store as StoreIcon, ShieldCheck } from 'lucide-react';
+import { ProductQuestionnaireModal } from '../Discovery/ProductQuestionnaireModal';
+import { MapPin, Sliders, Sparkles, X, ChevronRight, Store as StoreIcon, ShieldCheck, ArrowLeft } from 'lucide-react';
 import { Product, Alternative } from '../../types';
 
 export const AppShell: React.FC = () => {
@@ -51,11 +52,29 @@ export const AppShell: React.FC = () => {
     reportAnswerTarget,
     setReportAnswerTarget,
     mobileMapOpen,
-    setMobileMapOpen
+    setMobileMapOpen,
+    resetThread
   } = useFitCheck();
 
   const [selectedVariant, setSelectedVariant] = useState<string | undefined>(undefined);
+  const [questionnaireProduct, setQuestionnaireProduct] = useState<Product | null>(null);
+  const [isQuestionnaireOpen, setIsQuestionnaireOpen] = useState(false);
   const currentProductMessages = productMessages[selectedProduct.id] || [];
+
+  const handleStartQuestionnaire = (product: Product, prompt?: string) => {
+    setSelectedProduct(product);
+    if (prompt) {
+      sendMessage(prompt, product.id);
+    } else {
+      setQuestionnaireProduct(product);
+      setIsQuestionnaireOpen(true);
+    }
+  };
+
+  const handleSubmitQuestionnaire = (prompt: string, product: Product) => {
+    setSelectedProduct(product);
+    sendMessage(prompt, product.id);
+  };
 
   const handleSelectAlternative = (alt: Alternative) => {
     if (alt.product_id) {
@@ -165,12 +184,28 @@ export const AppShell: React.FC = () => {
             <section className="lg:col-span-5 space-y-4">
               {discoveryMessages.length === 0 ? (
                 <EmptyState
+                  products={products}
                   onSelectPrompt={p => sendMessage(p)}
                   onSend={msg => sendMessage(msg)}
+                  onStartQuestionnaire={handleStartQuestionnaire}
                   disabled={isThinking}
                 />
               ) : (
                 <div className="flex flex-col space-y-4">
+                  <div className="flex items-center justify-between pb-1">
+                    <button
+                      type="button"
+                      onClick={resetThread}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-teal-800 dark:text-teal-300 bg-white dark:bg-dark-card border border-stone-200 dark:border-dark-border hover:bg-teal-50 dark:hover:bg-teal-950 transition-colors shadow-2xs"
+                    >
+                      <ArrowLeft size={13} />
+                      <span>← Back to Products & Online Link Finder</span>
+                    </button>
+                    <span className="text-[11px] font-mono text-ink-500">
+                      Mysuru · 6 local stores verified
+                    </span>
+                  </div>
+
                   <ChatThread
                     messages={discoveryMessages}
                     isThinking={isThinking}
@@ -429,6 +464,13 @@ export const AppShell: React.FC = () => {
       <ReportWrongAnswerModal
         target={reportAnswerTarget}
         onClose={() => setReportAnswerTarget(null)}
+      />
+
+      <ProductQuestionnaireModal
+        product={questionnaireProduct}
+        isOpen={isQuestionnaireOpen}
+        onClose={() => setIsQuestionnaireOpen(false)}
+        onSubmitQuestion={handleSubmitQuestionnaire}
       />
 
       {/* 4. Footer */}

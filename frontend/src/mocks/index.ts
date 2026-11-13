@@ -1,6 +1,7 @@
 import { AnswerPayload, Product, ShopperProfile } from '../types';
 import { MOCK_PRODUCTS } from './products';
 import { MOCK_STORES, DEFAULT_USER_LOCATION } from './stores';
+import { parseProductUrl } from '../utils/urlParser';
 import {
   SCENARIO_DRESS_M,
   SCENARIO_HP_CARTRIDGE,
@@ -102,6 +103,55 @@ export function evaluateMockQuery(
   profile?: ShopperProfile
 ): AnswerPayload {
   const q = message.toLowerCase().trim();
+
+  // Check if message is an online shopping product URL
+  if (q.includes('http://') || q.includes('https://') || q.includes('amazon') || q.includes('myntra') || q.includes('flipkart') || q.includes('ikea') || q.includes('nykaa')) {
+    const parsed = parseProductUrl(message);
+    if (parsed.matchedProduct) {
+      if (parsed.matchedProduct.id === 'prod_elec_cartridge_01') {
+        return {
+          ...SCENARIO_HP_CARTRIDGE,
+          headline: `Found from ${parsed.platformName}: Certified compatible with HP DeskJet 2331`,
+          product: parsed.matchedProduct
+        };
+      }
+      if (parsed.matchedProduct.id === 'prod_clothing_dress_01') {
+        return {
+          ...SCENARIO_DRESS_M,
+          headline: `Found from ${parsed.platformName}: Size M fits 36" bust, snug at 30" waist`,
+          product: parsed.matchedProduct
+        };
+      }
+      if (parsed.matchedProduct.id === 'prod_elec_tv_mount_01') {
+        return {
+          ...SCENARIO_TV_MOUNT,
+          headline: `Found from ${parsed.platformName}: TV Mount available in Mysuru today`,
+          product: parsed.matchedProduct
+        };
+      }
+      if (parsed.matchedProduct.id === 'prod_furniture_01') {
+        return {
+          ...SCENARIO_SOFA_DOOR,
+          headline: `Found from ${parsed.platformName}: Sofa available in Mysuru today`,
+          product: parsed.matchedProduct
+        };
+      }
+      if (parsed.matchedProduct.id === 'prod_elec_filter_01') {
+        return {
+          ...SCENARIO_VACUUM_FILTER,
+          headline: `Found from ${parsed.platformName}: HEPA Filter in stock in Mysuru`,
+          product: parsed.matchedProduct
+        };
+      }
+      if (parsed.matchedProduct.id === 'prod_pharm_paracetamol') {
+        return {
+          ...SCENARIO_PHARMACY,
+          headline: `Found from ${parsed.platformName}: Paracetamol in stock in Mysuru`,
+          product: parsed.matchedProduct
+        };
+      }
+    }
+  }
 
   // 1. Dress scenario: "bust 36, waist 30, will the M fit?"
   if (

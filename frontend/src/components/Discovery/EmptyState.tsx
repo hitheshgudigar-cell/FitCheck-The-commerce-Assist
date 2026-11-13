@@ -11,20 +11,29 @@ import {
   Footprints,
   Wrench,
   HelpCircle,
-  Tag
+  Tag,
+  Store,
+  Layers
 } from 'lucide-react';
 import { Composer } from '../Chat/Composer';
 import { PRODUCT_CATEGORIES, ProductCategoryInfo } from '../../types/categories';
+import { Product } from '../../types';
+import { ProductLinkParser } from './ProductLinkParser';
+import { ProductCatalogGrid } from './ProductCatalogGrid';
 
 interface EmptyStateProps {
-  onSelectPrompt: (prompt: string) => void;
+  products: Product[];
+  onSelectPrompt: (prompt: string, product?: Product) => void;
   onSend: (message: string) => void;
+  onStartQuestionnaire: (product: Product, prompt?: string) => void;
   disabled?: boolean;
 }
 
 export const EmptyState: React.FC<EmptyStateProps> = ({
+  products,
   onSelectPrompt,
   onSend,
+  onStartQuestionnaire,
   disabled = false
 }) => {
   const [selectedType, setSelectedType] = useState<ProductCategoryInfo | null>(null);
@@ -49,7 +58,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   };
 
   return (
-    <div className="py-4 sm:py-8 max-w-2xl mx-auto px-2 sm:px-4 text-center space-y-6 animate-in fade-in duration-200">
+    <div className="py-2 sm:py-6 max-w-3xl mx-auto px-1 sm:px-3 text-center space-y-6 animate-in fade-in duration-200">
       {/* Reassurance pill */}
       <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-teal-50 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-800/80">
         <ShieldCheck size={14} className="text-teal-600 dark:text-teal-400" />
@@ -62,87 +71,33 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
           Find what fits you, <br className="hidden sm:inline" />
           <span className="text-teal-700 dark:text-teal-400">available near you today</span>
         </h1>
-        <p className="mt-2 text-xs sm:text-sm text-ink-600 dark:text-dark-inkMuted max-w-lg mx-auto leading-relaxed">
-          Select the product type you are searching for, then specify the exact product or model to check size, compatibility, and nearby store stock.
+        <p className="mt-2 text-xs sm:text-sm text-ink-600 dark:text-dark-inkMuted max-w-xl mx-auto leading-relaxed">
+          Paste a product link from Amazon, Flipkart, or Myntra to check local store availability, or choose a product below to start its fit questionnaire.
         </p>
       </div>
 
-      {/* STEP 1: Product Types Selection */}
-      <div className="text-left space-y-2.5">
-        <div className="flex items-center justify-between text-xs font-mono font-semibold uppercase tracking-wider text-ink-500 dark:text-dark-inkMuted px-1">
-          <span className="flex items-center gap-1.5 text-teal-800 dark:text-teal-300 font-bold">
-            <Sparkles size={13} className="text-teal-700 dark:text-teal-400" />
-            <span>Step 1: Choose Product Type</span>
-          </span>
-          <span className="text-[11px] font-sans font-normal text-ink-400">
-            {selectedType ? `Selected: ${selectedType.name}` : 'Tap a category to start'}
-          </span>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {PRODUCT_CATEGORIES.map(cat => {
-            const isSelected = selectedType?.id === cat.id;
-
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => setSelectedType(cat)}
-                className={`p-3 rounded-2xl border text-left transition-all ${
-                  isSelected
-                    ? 'border-teal-700 bg-teal-50 dark:bg-teal-950/40 shadow-sm ring-1 ring-teal-700'
-                    : 'border-stone-200 dark:border-dark-border bg-white dark:bg-dark-card hover:border-teal-400 hover:shadow-2xs'
-                }`}
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <div
-                    className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 ${
-                      isSelected
-                        ? 'bg-teal-700 text-white'
-                        : 'bg-stone-100 dark:bg-dark-cardMuted text-ink-600 dark:text-dark-inkMuted'
-                    }`}
-                  >
-                    {getCategoryIcon(cat.id)}
-                  </div>
-                  <span className="text-xs font-bold text-ink-900 dark:text-dark-ink truncate">
-                    {cat.name.split(' ')[0]}
-                  </span>
-                </div>
-                <p className="text-[10px] text-ink-500 dark:text-dark-inkMuted line-clamp-1">
-                  {cat.description}
-                </p>
-              </button>
-            );
-          })}
-        </div>
+      {/* FEATURE 1: Online Shopping Link Parser */}
+      <div className="text-left">
+        <ProductLinkParser
+          onStartQuestionnaire={product => onStartQuestionnaire(product)}
+          disabled={disabled}
+        />
       </div>
 
-      {/* STEP 2: Instruction to specify actual product */}
-      <div className="text-left space-y-2 p-4 rounded-2xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/80 dark:border-amber-900/40">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-1.5 text-xs font-mono font-bold uppercase tracking-wider text-amber-900 dark:text-amber-300">
-            <Search size={14} className="text-amber-700 dark:text-amber-400" />
-            <span>Step 2: Specify the Actual Product</span>
-          </div>
-          {selectedType && (
-            <button
-              type="button"
-              onClick={() => setSelectedType(null)}
-              className="text-[10px] text-amber-800 dark:text-amber-400 hover:underline"
-            >
-              Show all types
-            </button>
-          )}
+      {/* Search & Prompt Specification */}
+      <div className="text-left space-y-3 pt-2">
+        <div className="flex items-center justify-between text-xs font-mono font-bold uppercase tracking-wider text-ink-700 dark:text-dark-ink px-1">
+          <span className="flex items-center gap-1.5 text-teal-800 dark:text-teal-300">
+            <Search size={14} className="text-teal-700 dark:text-teal-400" />
+            <span>Search or Ask About Any Item</span>
+          </span>
+          <span className="text-[11px] font-sans font-normal text-ink-500">
+            {selectedType ? `Category: ${selectedType.name}` : 'or tap a sample query'}
+          </span>
         </div>
 
-        <p className="text-xs text-ink-700 dark:text-ink-200 leading-relaxed font-medium">
-          {selectedType
-            ? `Tell us the specific ${selectedType.name.toLowerCase()} item (brand, model, size, or part number):`
-            : "Specify the actual product you're finding, or tap a sample below:"}
-        </p>
-
-        {/* Dynamic Suggested Queries for the selected type */}
-        <div className="flex flex-wrap gap-1.5 pt-1">
+        {/* Quick query chips */}
+        <div className="flex flex-wrap gap-1.5">
           {(selectedType ? selectedType.examples : [
             'Black dress, size M, available near me today',
             'Gluten-free biscuits nearby',
@@ -154,25 +109,33 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
               key={idx}
               type="button"
               onClick={() => onSelectPrompt(ex)}
-              className="px-2.5 py-1 rounded-xl text-xs font-medium bg-white dark:bg-dark-card border border-amber-300/80 dark:border-amber-800 text-ink-800 dark:text-dark-ink hover:bg-amber-100 hover:border-amber-400 transition-all shadow-2xs text-left"
+              className="px-2.5 py-1.5 rounded-xl text-xs font-medium bg-stone-50 dark:bg-dark-card border border-stone-200 dark:border-dark-border text-ink-800 dark:text-dark-ink hover:bg-teal-50 hover:border-teal-400 hover:text-teal-900 transition-all shadow-2xs text-left"
             >
               "{ex}"
             </button>
           ))}
         </div>
+
+        {/* Composer */}
+        <div className="shadow-lifted rounded-2xl">
+          <Composer
+            onSend={onSend}
+            disabled={disabled}
+            placeholder={
+              selectedType
+                ? `Specify actual ${selectedType.name.toLowerCase()} item (e.g. ${selectedType.examples[0]})...`
+                : "Ask about fit, compatibility, or paste an online link (e.g. 'HP 2331 cartridge')..."
+            }
+            autoFocus={false}
+          />
+        </div>
       </div>
 
-      {/* Composer */}
-      <div className="text-left shadow-lifted rounded-2xl">
-        <Composer
-          onSend={onSend}
-          disabled={disabled}
-          placeholder={
-            selectedType
-              ? `Specify actual ${selectedType.name.toLowerCase()} item (e.g. ${selectedType.examples[0]})...`
-              : "Specify the actual product you're finding (e.g. 'Black dress size M', 'HP 2331 cartridge')..."
-          }
-          autoFocus={false}
+      {/* FEATURE 2: Local Products List + Questionnaire Flow */}
+      <div className="pt-4 border-t border-stone-200 dark:border-dark-border text-left">
+        <ProductCatalogGrid
+          products={products}
+          onSelectProduct={prod => onStartQuestionnaire(prod)}
         />
       </div>
     </div>

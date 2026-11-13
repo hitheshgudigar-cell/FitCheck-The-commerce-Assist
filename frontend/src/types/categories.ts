@@ -57,3 +57,4 @@ export const PRODUCT_CATEGORIES: ProductCategoryInfo[] = [
     examples: ['M8 anchor bolt for concrete', 'Heavy-duty shelf brackets']
   }
 ];
+

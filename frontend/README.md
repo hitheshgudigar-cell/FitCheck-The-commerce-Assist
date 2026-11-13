@@ -84,6 +84,9 @@ frontend/
 │   │   │   └── Skeletons.tsx     # Animated progress pipeline ("Understanding...", "Checking specs...", "Checking stock...")
 │   │   ├── Discovery/
 │   │   │   ├── EmptyState.tsx    # Hero headline, reassurance badge, composer, and 5 tappable demo prompts
+│   │   │   ├── ProductLinkParser.tsx # Online link parser (Amazon, Flipkart, Myntra, IKEA, Nykaa) + local Mysuru store inventory matcher
+│   │   │   ├── ProductCatalogGrid.tsx # Categorized local product list on home page with category pills & "Start Fit Questionnaire" triggers
+│   │   │   ├── ProductQuestionnaireModal.tsx # Interactive pre-purchase fit & compatibility questionnaire with 1-tap options and custom specs
 │   │   │   ├── FilterBar.tsx     # Radius slider (1-25 km), Pickup today toggle, In stock toggle, Sort selector
 │   │   │   └── ProductResultCard.tsx # Ranked result card with image, brand, fit badge, nearest store, and "Why this verdict"
 │   │   ├── ProductPage/
