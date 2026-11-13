@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from typing import List, Optional
+import os
 import json
 from pathlib import Path
 
@@ -17,11 +18,23 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS for frontend development
+# Configure CORS: support comma-separated origins from ALLOWED_ORIGINS env var, with safe local defaults
+raw_origins = os.environ.get("ALLOWED_ORIGINS", "").strip()
+if raw_origins and raw_origins != "*":
+    allowed_origins = [o.strip() for o in raw_origins.split(",") if o.strip()]
+    if "http://localhost:5173" not in allowed_origins:
+        allowed_origins.append("http://localhost:5173")
+    if "http://127.0.0.1:5173" not in allowed_origins:
+        allowed_origins.append("http://127.0.0.1:5173")
+    cors_credentials = True
+else:
+    allowed_origins = ["*"]
+    cors_credentials = False
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=allowed_origins,
+    allow_credentials=cors_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )
