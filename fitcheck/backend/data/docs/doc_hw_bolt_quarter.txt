@@ -1,0 +1,9 @@
+[page 1]
+ACCUMETRIC FASTENERS - 1/4-20 UNC HEX HEAD MACHINE BOLTS (#AM-HB-1420)
+Material: Grade 5 High Tensile Zinc Plated Steel.
+
+[page 2]
+ENGINEERING SPECIFICATIONS:
+- Thread Size: 1/4"-20 UNC (Coarse thread, 20 threads per inch).
+- Nominal Tensile Strength: 120,000 PSI.
+- Working Load Limit: 80 kg per bolt.

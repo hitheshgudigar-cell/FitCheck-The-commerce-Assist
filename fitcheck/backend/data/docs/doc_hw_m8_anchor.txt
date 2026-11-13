@@ -1,0 +1,11 @@
+[page 1]
+FORGETORQUE FIXINGS - M8 SHIELD EXPANSION ANCHOR BOLT (ITEM #FT-SA-M8-75)
+Material: Grade 304 (A2) Marine Stainless Steel.
+
+[page 2]
+MECHANICAL PERFORMANCE AND SUBSTRATE RATINGS:
+- Thread Size: Metric M8 (Pitch 1.25 mm).
+- Drill Hole Diameter: 12 mm | Minimum Embedment Depth: 50 mm.
+- Recommended Safe Working Tensile Load: 150 kg (1.47 kN) in Grade 30 Concrete.
+- Suitable Substrates: Concrete, Dense Solid Brick, Hard Natural Stone.
+- Unsuitable Substrates: Drywall, Lightweight Aerated Block, Hollow Masonry.

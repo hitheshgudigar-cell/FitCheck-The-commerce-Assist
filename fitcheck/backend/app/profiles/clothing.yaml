@@ -1,0 +1,29 @@
+category: clothing
+aliases:
+  - dress
+  - apparel
+  - shirt
+  - kurta
+  - tops
+  - garments
+  - clothing
+check_types:
+  - fit
+  - availability
+required_inputs:
+  fit:
+    - chest
+    - waist
+attributes_to_check:
+  - size_chart
+  - unit
+  - fit_type
+rule: clothing_size_match
+clarifying_questions:
+  chest: "What is your chest or bust measurement (in inches or cm)?"
+  waist: "What is your waist measurement (in inches or cm)?"
+  hip: "What is your hip measurement (in inches or cm)?"
+source_doc_types:
+  - size_guide
+  - garment_spec_sheet
+  - manufacturer_measurement_chart

@@ -1,0 +1,33 @@
+category: electronics_accessory
+aliases:
+  - electronics
+  - cartridge
+  - ink
+  - charger
+  - cable
+  - tv_mount
+  - wall_mount
+  - filter
+  - vacuum_filter
+  - phone_case
+  - adapter
+check_types:
+  - compatibility
+  - availability
+required_inputs:
+  compatibility:
+    - device_model
+attributes_to_check:
+  - supported_models
+  - supported_vesa
+  - max_weight_kg
+  - wattage
+  - connector
+rule: electronics_compatibility_match
+clarifying_questions:
+  device_model: "What is your specific device model (e.g., HP DeskJet 2331, Dyson V11, Samsung 55\" TV)?"
+  vesa: "What is the VESA mounting hole pattern on the back of your TV (e.g. 200x200 mm)?"
+source_doc_types:
+  - compatibility_matrix
+  - user_manual
+  - technical_datasheet

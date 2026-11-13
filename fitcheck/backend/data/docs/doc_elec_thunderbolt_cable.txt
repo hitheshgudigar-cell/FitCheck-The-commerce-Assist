@@ -1,0 +1,9 @@
+[page 1]
+SPEEDSYNC THUNDERBOLT 4 USB-C CABLE 2M (#SS-TB4-2M)
+Transfer Speed: 40 Gbps bi-directional data bandwidth.
+
+[page 2]
+POWER & DISPLAY CAPABILITIES:
+- Charging: Supports up to 100W USB-C Power Delivery (20V/5A E-Marker chip).
+- Video Output: Supports single 8K@60Hz or dual 4K@60Hz video streaming.
+- Connector: Standard USB Type-C to USB Type-C.

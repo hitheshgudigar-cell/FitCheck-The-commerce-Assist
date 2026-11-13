@@ -1,0 +1,23 @@
+category: footwear
+aliases:
+  - shoes
+  - sneakers
+  - footwear
+  - boots
+  - sandals
+  - trainers
+check_types:
+  - fit
+  - availability
+required_inputs:
+  fit:
+    - foot_length_cm
+attributes_to_check:
+  - size_chart
+  - gender
+rule: footwear_size_match
+clarifying_questions:
+  foot_length_cm: "What is your foot length in centimeters (or inches)?"
+source_doc_types:
+  - shoe_size_chart
+  - footwear_fitment_table

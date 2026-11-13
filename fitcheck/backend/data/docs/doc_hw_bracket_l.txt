@@ -1,0 +1,9 @@
+[page 1]
+TITANSTRUCT HEAVY DUTY STEEL L-BRACKET (#TS-LB-300)
+Dimensions: 300 mm x 200 mm x 30 mm. Heavy 4mm cold-rolled steel.
+
+[page 2]
+LOAD RATING & FIXTURE SPECIFICATIONS:
+- Fastener Hole Diameter: 8.5 mm (Engineered for M8 bolts/screws).
+- Maximum Uniform Distributed Load: 100 kg per pair installed into solid substrate.
+- Suitable Wall Types: Solid concrete, masonry, timber studs.

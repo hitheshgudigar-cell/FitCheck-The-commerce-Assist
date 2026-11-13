@@ -1,0 +1,9 @@
+[page 1]
+VOLTRAPID GAN 65W ULTRA FAST CHARGER - TECHNICAL SPECIFICATION (#VR-GAN-65)
+Technology: Gallium Nitride (GaN III) semiconductor. Dual USB-C + Single USB-A.
+
+[page 2]
+POWER DELIVERY SPECIFICATIONS:
+- Single USB-C1 Output: 5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/3.25A (65W Max).
+- Supported Protocols: USB Power Delivery 3.0 (PD 3.0), Qualcomm Quick Charge 4.0+ (QC 4.0), PPS (3.3V-11V 5A).
+- Input Voltage Range: 100V - 240V AC ~ 50/60Hz 1.5A international standard.

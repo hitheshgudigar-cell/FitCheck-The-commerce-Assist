@@ -1,0 +1,487 @@
+[
+  {
+    "id": "eval_cloth_01",
+    "category": "clothing",
+    "product_id": "prod_clothing_dress_01",
+    "question": "I'm bust 36, waist 30. Will the M fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_clothing_aura_dress",
+    "notes": "Snug at waist (M max waist is 29.5 in), recommends L."
+  },
+  {
+    "id": "eval_cloth_02",
+    "category": "clothing",
+    "product_id": "prod_clothing_dress_01",
+    "question": "My measurements are bust 38, waist 31. Will size L fit me?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_clothing_aura_dress",
+    "notes": "Matches Size L ranges (bust 38-40, waist 30-33)."
+  },
+  {
+    "id": "eval_cloth_03",
+    "category": "clothing",
+    "product_id": "prod_clothing_dress_01",
+    "question": "I have bust 33 and waist 27. Will size S fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_clothing_aura_dress",
+    "notes": "Matches Size S chart."
+  },
+  {
+    "id": "eval_cloth_04",
+    "category": "clothing",
+    "product_id": "prod_clothing_dress_01",
+    "question": "Will this dress fit me?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_clothing_aura_dress",
+    "notes": "Clarification: shopper measurements missing."
+  },
+  {
+    "id": "eval_cloth_05",
+    "category": "clothing",
+    "product_id": "prod_clothing_kurta_01",
+    "question": "My chest is 40 inches. Will the size 40 (M) kurta fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_clothing_kurta_cotton",
+    "notes": "Chest 40 in matches size 40 range (39-41 in)."
+  },
+  {
+    "id": "eval_cloth_06",
+    "category": "clothing",
+    "product_id": "prod_clothing_kurta_01",
+    "question": "My chest is 46 inches. Will the size 40 kurta fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_clothing_kurta_cotton",
+    "notes": "Exceeds size 40 maximum chest."
+  },
+  {
+    "id": "eval_cloth_07",
+    "category": "clothing",
+    "product_id": "prod_clothing_dress_02",
+    "question": "My bust is 62 inches and waist 58 inches. Will size XL fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_clothing_urban_midi",
+    "notes": "Measurements exceed XL maximum."
+  },
+  {
+    "id": "eval_cloth_08",
+    "category": "clothing",
+    "product_id": "prod_clothing_dress_01",
+    "question": "My bust is 36 inches. Can you confirm if this dress fits without my waist?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_clothing_aura_dress",
+    "notes": "Clarification: waist measurement required."
+  },
+
+  {
+    "id": "eval_foot_01",
+    "category": "footwear",
+    "product_id": "prod_footwear_01",
+    "question": "My foot length is 26.2 cm. Will UK-8 fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_footwear_sprintpro",
+    "notes": "26.2 cm falls in UK-8 range (25.9 - 26.6 cm)."
+  },
+  {
+    "id": "eval_foot_02",
+    "category": "footwear",
+    "product_id": "prod_footwear_01",
+    "question": "My foot length is 26.2 cm. Will UK-7 fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_footwear_sprintpro",
+    "notes": "26.2 cm exceeds UK-7 maximum (25.8 cm)."
+  },
+  {
+    "id": "eval_foot_03",
+    "category": "footwear",
+    "product_id": "prod_footwear_01",
+    "question": "My foot is 24.8 cm long. Will size UK-6 fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_footwear_sprintpro",
+    "notes": "24.8 cm falls in UK-6 (24.5 - 25.0 cm)."
+  },
+  {
+    "id": "eval_foot_04",
+    "category": "footwear",
+    "product_id": "prod_footwear_01",
+    "question": "Will these running shoes fit my feet?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_footwear_sprintpro",
+    "notes": "Clarification: foot length missing."
+  },
+  {
+    "id": "eval_foot_05",
+    "category": "footwear",
+    "product_id": "prod_footwear_02",
+    "question": "My foot is 27.0 cm. Will UK-9 fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_footwear_derby",
+    "notes": "27.0 cm falls in UK-9 (26.6 - 27.4 cm)."
+  },
+  {
+    "id": "eval_foot_06",
+    "category": "footwear",
+    "product_id": "prod_footwear_03",
+    "question": "My foot length is 28.0 cm. Will UK-10 fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_footwear_hiking",
+    "notes": "28.0 cm falls in UK-10 (27.7 - 28.5 cm)."
+  },
+  {
+    "id": "eval_foot_07",
+    "category": "footwear",
+    "product_id": "prod_footwear_01",
+    "question": "My foot length is 36.5 cm. Will UK-10 fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_footwear_sprintpro",
+    "notes": "Far exceeds maximum shoe size in chart."
+  },
+
+  {
+    "id": "eval_furn_01",
+    "category": "furniture",
+    "product_id": "prod_furniture_01",
+    "question": "My doorway is 80 cm wide. Will this sofa fit through?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_furniture_nordic_sofa",
+    "notes": "Packaged minimum dimension is 75 cm <= 80 cm doorway."
+  },
+  {
+    "id": "eval_furn_02",
+    "category": "furniture",
+    "product_id": "prod_furniture_01",
+    "question": "My front door is 70 cm wide. Will this sofa fit inside?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_furniture_nordic_sofa",
+    "notes": "Packaged minimum dimension 75 cm > 70 cm door."
+  },
+  {
+    "id": "eval_furn_03",
+    "category": "furniture",
+    "product_id": "prod_furniture_02",
+    "question": "Can I fit this wardrobe through a 50 cm narrow hallway?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_furniture_wardrobe",
+    "notes": "Packaged minimum width is 40 cm <= 50 cm."
+  },
+  {
+    "id": "eval_furn_04",
+    "category": "furniture",
+    "product_id": "prod_furniture_02",
+    "question": "Will this wardrobe fit through a 35 cm opening?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_furniture_wardrobe",
+    "notes": "40 cm minimum package > 35 cm opening."
+  },
+  {
+    "id": "eval_furn_05",
+    "category": "furniture",
+    "product_id": "prod_furniture_03",
+    "question": "Will this sectional couch fit through my 80cm door?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_furniture_studio_couch",
+    "notes": "Non-negotiable edge case: packaged dimensions missing in doc."
+  },
+  {
+    "id": "eval_furn_06",
+    "category": "furniture",
+    "product_id": "prod_furniture_01",
+    "question": "Will this sofa fit through my door?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_furniture_nordic_sofa",
+    "notes": "Clarification: door width missing."
+  },
+  {
+    "id": "eval_furn_07",
+    "category": "furniture",
+    "product_id": "prod_furniture_04",
+    "question": "My door width is 30 cm. Will this dining table package fit tilted?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_furniture_dining_table",
+    "notes": "Tilted package thickness 22 cm <= 30 cm door."
+  },
+
+  {
+    "id": "eval_elec_01",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_cartridge_01",
+    "question": "Does this cartridge work with my HP DeskJet 2331?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_elec_hp67",
+    "notes": "HP DeskJet 2331 is in supported models list."
+  },
+  {
+    "id": "eval_elec_02",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_cartridge_01",
+    "question": "Is this ink cartridge compatible with HP DeskJet 2722?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_elec_hp67",
+    "notes": "HP DeskJet 2722 is in supported models list."
+  },
+  {
+    "id": "eval_elec_03",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_cartridge_01",
+    "question": "Will this cartridge fit my Epson L3150 printer?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_elec_hp67",
+    "notes": "Epson L3150 not supported."
+  },
+  {
+    "id": "eval_elec_04",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_cartridge_01",
+    "question": "Does this ink work with Canon Pixma G2010?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_elec_hp67",
+    "notes": "Canon Pixma not supported."
+  },
+  {
+    "id": "eval_elec_05",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_tv_mount_01",
+    "question": "I have a 55 inch TV with 200x200 VESA weighing 20kg. Will this mount fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_elec_tv_mount_promount",
+    "notes": "VESA 200x200 and 20kg <= 45kg supported."
+  },
+  {
+    "id": "eval_elec_06",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_tv_mount_01",
+    "question": "I have a 75 inch TV with 600x400 VESA weighing 35kg. Will this mount fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_elec_tv_mount_promount",
+    "notes": "VESA 600x400 not supported by ProMount 65."
+  },
+  {
+    "id": "eval_elec_07",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_tv_mount_01",
+    "question": "I have a TV with 400x400 VESA weighing 60kg. Will this mount support it?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_elec_tv_mount_promount",
+    "notes": "Weight 60kg exceeds 45kg limit."
+  },
+  {
+    "id": "eval_elec_08",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_filter_01",
+    "question": "Does this filter work with Dyson V11 Absolute?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_elec_dyson_filter",
+    "notes": "Dyson V11 Absolute is certified compatible."
+  },
+  {
+    "id": "eval_elec_09",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_filter_01",
+    "question": "Will this filter fit my Dyson V8 Animal vacuum?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_elec_dyson_filter",
+    "notes": "Dyson V8 is explicitly incompatible."
+  },
+  {
+    "id": "eval_elec_10",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_filter_01",
+    "question": "Does this filter fit my vacuum?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_elec_dyson_filter",
+    "notes": "Clarification: device model missing."
+  },
+  {
+    "id": "eval_elec_11",
+    "category": "electronics_accessory",
+    "product_id": "prod_elec_charger_01",
+    "question": "Will this charger charge my custom device?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_elec_charger_65w",
+    "notes": "Clarification: wattage/specs missing."
+  },
+
+  {
+    "id": "eval_hw_01",
+    "category": "hardware",
+    "product_id": "prod_hw_anchor_01",
+    "question": "I need an M8 anchor bolt to hold 100 kg in solid concrete. Will this work?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_hw_m8_anchor",
+    "notes": "M8 thread, 100kg <= 150kg rating, concrete substrate."
+  },
+  {
+    "id": "eval_hw_02",
+    "category": "hardware",
+    "product_id": "prod_hw_anchor_01",
+    "question": "Can this M8 anchor hold 200 kg load in concrete?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_hw_m8_anchor",
+    "notes": "200 kg exceeds safe working load of 150 kg."
+  },
+  {
+    "id": "eval_hw_03",
+    "category": "hardware",
+    "product_id": "prod_hw_anchor_01",
+    "question": "I have an M6 threaded fixture. Will this bolt fit?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_hw_m8_anchor",
+    "notes": "M6 fixture does not match M8 bolt thread."
+  },
+  {
+    "id": "eval_hw_04",
+    "category": "hardware",
+    "product_id": "prod_hw_anchor_01",
+    "question": "Can I install this shield anchor into standard drywall?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_hw_m8_anchor",
+    "notes": "Drywall is an unsuitable substrate for heavy shield expansion anchors."
+  },
+  {
+    "id": "eval_hw_05",
+    "category": "hardware",
+    "product_id": "prod_hw_anchor_02",
+    "question": "I need an M6 anchor for drywall to hold a 20 kg mirror. Will this fit?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_hw_m6_drywall",
+    "notes": "M6 in drywall, 20kg <= 35kg capacity."
+  },
+  {
+    "id": "eval_hw_06",
+    "category": "hardware",
+    "product_id": "prod_hw_anchor_02",
+    "question": "Can this drywall anchor hold a 50 kg shelf?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_hw_m6_drywall",
+    "notes": "50kg exceeds 35kg limit."
+  },
+  {
+    "id": "eval_hw_07",
+    "category": "hardware",
+    "product_id": "prod_hw_bracket_01",
+    "question": "Will this bracket work for my wall?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_hw_bracket_l",
+    "notes": "Clarification: load or thread size missing."
+  },
+
+  {
+    "id": "eval_groc_01",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_groc_almond_flour",
+    "question": "I am looking for a gluten-free and vegan flour. Is this suitable?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_groc_almond",
+    "notes": "Certified gluten-free and vegan."
+  },
+  {
+    "id": "eval_groc_02",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_groc_almond_flour",
+    "question": "I have a severe tree nut allergy. Can I eat this?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_groc_almond",
+    "notes": "Contains tree nuts (almonds)."
+  },
+  {
+    "id": "eval_groc_03",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_groc_oat_milk",
+    "question": "I am strictly dairy-free and vegan. Is this oat milk safe?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_groc_oatmilk",
+    "notes": "Dairy-free and vegan."
+  },
+  {
+    "id": "eval_groc_04",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_groc_cookies",
+    "question": "I am on a gluten-free celiac diet. Can I eat these spelt cookies?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_groc_cookies",
+    "notes": "Contains spelt flour (gluten/wheat)."
+  },
+  {
+    "id": "eval_groc_05",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_groc_cookies",
+    "question": "Are these cookies suitable for a vegetarian diet?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_groc_cookies",
+    "notes": "Classified vegetarian on package."
+  },
+  {
+    "id": "eval_groc_06",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_pharm_paracetamol",
+    "question": "I need a gluten-free pain reliever. Is Crocin Advance gluten-free?",
+    "session_context": {},
+    "expected_verdict": "YES",
+    "expected_citation_doc": "doc_pharm_crocin",
+    "notes": "Gluten-free according to label facts, includes doctor disclaimer."
+  },
+  {
+    "id": "eval_groc_07",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_pharm_cetirizine",
+    "question": "I have severe lactose intolerance. Can I take Cetzine?",
+    "session_context": {},
+    "expected_verdict": "NO",
+    "expected_citation_doc": "doc_pharm_cetzine",
+    "notes": "Contains lactose monohydrate excipient."
+  },
+  {
+    "id": "eval_groc_08",
+    "category": "grocery_pharmacy",
+    "product_id": "prod_groc_cookies",
+    "question": "Is this snack suitable for me?",
+    "session_context": {},
+    "expected_verdict": "CANNOT_CONFIRM",
+    "expected_citation_doc": "doc_groc_cookies",
+    "notes": "Clarification: dietary constraints missing."
+  }
+]

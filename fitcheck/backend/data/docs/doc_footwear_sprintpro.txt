@@ -1,0 +1,12 @@
+[page 1]
+SPRINTPRO ATHLETIC ENGINEERING - AERO RUNNING SHOE SIZING MANUAL (MODEL: SP-AERO-01)
+Last Type: Neutral biomechanical running shoe.
+
+[page 2]
+OFFICIAL FOOT LENGTH FITMENT TABLE (CENTIMETERS TO UK SIZE):
+- UK-6: Foot Length 24.5 - 25.0 cm (US 7 / EU 40)
+- UK-7: Foot Length 25.1 - 25.8 cm (US 8 / EU 41)
+- UK-8: Foot Length 25.9 - 26.6 cm (US 9 / EU 42)
+- UK-9: Foot Length 26.7 - 27.5 cm (US 10 / EU 43)
+- UK-10: Foot Length 27.6 - 28.3 cm (US 11 / EU 44)
+Fit Warning: Running shoe allows 5mm toe-box clearance automatically when mapped to foot length.

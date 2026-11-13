@@ -1,0 +1,29 @@
+category: hardware
+aliases:
+  - hardware
+  - anchor
+  - bolt
+  - screw
+  - bracket
+  - fastener
+check_types:
+  - fit
+  - compatibility
+  - suitability
+  - availability
+required_inputs:
+  compatibility:
+    - thread_size
+attributes_to_check:
+  - thread_size
+  - load_rating_kg
+  - material
+  - suitable_substrates
+rule: hardware_fitment_match
+clarifying_questions:
+  thread_size: "What thread size or bolt diameter do you need (e.g. M8, M6, 1/4\")?"
+  load_kg: "What is the expected working load or weight (in kg) this hardware will support?"
+source_doc_types:
+  - technical_datasheet
+  - load_test_report
+  - engineering_drawing

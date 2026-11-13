@@ -1,0 +1,1338 @@
+[
+  {
+    "id": "prod_clothing_dress_01",
+    "name": "Aura Silk Floral Wrap Dress",
+    "brand": "Aura Apparel",
+    "category": "clothing",
+    "variants": [
+      {
+        "sku": "SKU-AURA-DR-S",
+        "name": "Size S"
+      },
+      {
+        "sku": "SKU-AURA-DR-M",
+        "name": "Size M"
+      },
+      {
+        "sku": "SKU-AURA-DR-L",
+        "name": "Size L"
+      },
+      {
+        "sku": "SKU-AURA-DR-XL",
+        "name": "Size XL"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "S": {
+          "chest": [
+            32,
+            34
+          ],
+          "waist": [
+            26,
+            28
+          ],
+          "hip": [
+            34,
+            36
+          ]
+        },
+        "M": {
+          "chest": [
+            35,
+            37
+          ],
+          "waist": [
+            28,
+            29.5
+          ],
+          "hip": [
+            37,
+            39
+          ]
+        },
+        "L": {
+          "chest": [
+            38,
+            40
+          ],
+          "waist": [
+            30,
+            33
+          ],
+          "hip": [
+            40,
+            42
+          ]
+        },
+        "XL": {
+          "chest": [
+            41,
+            43
+          ],
+          "waist": [
+            34,
+            37
+          ],
+          "hip": [
+            43,
+            46
+          ]
+        }
+      },
+      "unit": "inches",
+      "fit_type": "regular_wrap",
+      "source_doc": "doc_clothing_aura_dress (Page 2)"
+    },
+    "docs": [
+      "doc_clothing_aura_dress"
+    ],
+    "marketing_copy": "Exquisite mulberry silk floral wrap dress designed for elegant evening soirees and garden brunches."
+  },
+  {
+    "id": "prod_clothing_dress_02",
+    "name": "Urban Elegance Black Midi Dress",
+    "brand": "Urban Elegance",
+    "category": "clothing",
+    "variants": [
+      {
+        "sku": "SKU-UE-MIDI-S",
+        "name": "Size S"
+      },
+      {
+        "sku": "SKU-UE-MIDI-M",
+        "name": "Size M"
+      },
+      {
+        "sku": "SKU-UE-MIDI-L",
+        "name": "Size L"
+      },
+      {
+        "sku": "SKU-UE-MIDI-XL",
+        "name": "Size XL"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "S": {
+          "chest": [
+            33,
+            35
+          ],
+          "waist": [
+            26,
+            28
+          ],
+          "hip": [
+            35,
+            37
+          ]
+        },
+        "M": {
+          "chest": [
+            36,
+            38
+          ],
+          "waist": [
+            29,
+            31
+          ],
+          "hip": [
+            38,
+            40
+          ]
+        },
+        "L": {
+          "chest": [
+            39,
+            41
+          ],
+          "waist": [
+            32,
+            34
+          ],
+          "hip": [
+            41,
+            43
+          ]
+        },
+        "XL": {
+          "chest": [
+            42,
+            44
+          ],
+          "waist": [
+            35,
+            38
+          ],
+          "hip": [
+            44,
+            47
+          ]
+        }
+      },
+      "unit": "inches",
+      "fit_type": "midi_stretch",
+      "color": "black",
+      "source_doc": "doc_clothing_urban_midi (Page 2)"
+    },
+    "docs": [
+      "doc_clothing_urban_midi"
+    ],
+    "marketing_copy": "Sleek organic black midi dress offering effortless sophistication from desk to dinner."
+  },
+  {
+    "id": "prod_clothing_dress_03",
+    "name": "Boho Cotton Tiered Dress",
+    "brand": "Boho Craft",
+    "category": "clothing",
+    "variants": [
+      {
+        "sku": "SKU-BC-TIER-S",
+        "name": "Size S"
+      },
+      {
+        "sku": "SKU-BC-TIER-M",
+        "name": "Size M"
+      },
+      {
+        "sku": "SKU-BC-TIER-L",
+        "name": "Size L"
+      },
+      {
+        "sku": "SKU-BC-TIER-XL",
+        "name": "Size XL"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "S": {
+          "chest": [
+            32,
+            34
+          ],
+          "waist": [
+            26,
+            28
+          ],
+          "hip": [
+            34,
+            40
+          ]
+        },
+        "M": {
+          "chest": [
+            35,
+            37
+          ],
+          "waist": [
+            28,
+            30
+          ],
+          "hip": [
+            38,
+            44
+          ]
+        },
+        "L": {
+          "chest": [
+            38,
+            40
+          ],
+          "waist": [
+            31,
+            33
+          ],
+          "hip": [
+            41,
+            47
+          ]
+        },
+        "XL": {
+          "chest": [
+            41,
+            43
+          ],
+          "waist": [
+            34,
+            36
+          ],
+          "hip": [
+            44,
+            50
+          ]
+        }
+      },
+      "unit": "inches",
+      "fit_type": "relaxed_fit",
+      "source_doc": "doc_clothing_boho_dress (Page 2)"
+    },
+    "docs": [
+      "doc_clothing_boho_dress"
+    ],
+    "marketing_copy": "Breezy tiered cambric dress crafted for warm days and carefree weekend getaways."
+  },
+  {
+    "id": "prod_clothing_dress_04",
+    "name": "Classic Evening Gown",
+    "brand": "Atelier Royale",
+    "category": "clothing",
+    "variants": [
+      {
+        "sku": "SKU-AR-GOWN-S",
+        "name": "Size S"
+      },
+      {
+        "sku": "SKU-AR-GOWN-M",
+        "name": "Size M"
+      },
+      {
+        "sku": "SKU-AR-GOWN-L",
+        "name": "Size L"
+      },
+      {
+        "sku": "SKU-AR-GOWN-XL",
+        "name": "Size XL"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "S": {
+          "chest": [
+            32,
+            33
+          ],
+          "waist": [
+            25,
+            26
+          ],
+          "hip": [
+            35,
+            36
+          ]
+        },
+        "M": {
+          "chest": [
+            34,
+            35.5
+          ],
+          "waist": [
+            27,
+            28.5
+          ],
+          "hip": [
+            37,
+            38.5
+          ]
+        },
+        "L": {
+          "chest": [
+            36,
+            38
+          ],
+          "waist": [
+            29,
+            31
+          ],
+          "hip": [
+            39,
+            41
+          ]
+        },
+        "XL": {
+          "chest": [
+            39,
+            41
+          ],
+          "waist": [
+            32,
+            34
+          ],
+          "hip": [
+            42,
+            44
+          ]
+        }
+      },
+      "unit": "inches",
+      "fit_type": "tailored_couture",
+      "source_doc": "doc_clothing_evening_gown (Page 2)"
+    },
+    "docs": [
+      "doc_clothing_evening_gown"
+    ],
+    "marketing_copy": "Statuesque floor-sweeping gown designed with sculptured corsetry for black-tie galas."
+  },
+  {
+    "id": "prod_clothing_kurta_01",
+    "name": "FabIndia Style Classic Cotton Kurta",
+    "brand": "Viraasat Ethnic",
+    "category": "clothing",
+    "variants": [
+      {
+        "sku": "SKU-VK-KURT-38",
+        "name": "Size 38 (S)"
+      },
+      {
+        "sku": "SKU-VK-KURT-40",
+        "name": "Size 40 (M)"
+      },
+      {
+        "sku": "SKU-VK-KURT-42",
+        "name": "Size 42 (L)"
+      },
+      {
+        "sku": "SKU-VK-KURT-44",
+        "name": "Size 44 (XL)"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "S": {
+          "chest": [
+            37,
+            39
+          ],
+          "waist": [
+            32,
+            34
+          ]
+        },
+        "M": {
+          "chest": [
+            39,
+            41
+          ],
+          "waist": [
+            34,
+            36
+          ]
+        },
+        "L": {
+          "chest": [
+            41,
+            43
+          ],
+          "waist": [
+            36,
+            38
+          ]
+        },
+        "XL": {
+          "chest": [
+            43,
+            45
+          ],
+          "waist": [
+            38,
+            40
+          ]
+        }
+      },
+      "unit": "inches",
+      "fit_type": "comfort_regular",
+      "source_doc": "doc_clothing_kurta_cotton (Page 2)"
+    },
+    "docs": [
+      "doc_clothing_kurta_cotton"
+    ],
+    "marketing_copy": "Handspun pure cotton kurta combining traditional artisanal roots with breathable comfort."
+  },
+  {
+    "id": "prod_clothing_kurta_02",
+    "name": "Festive Silk Embroidered Kurta",
+    "brand": "Viraasat Ethnic",
+    "category": "clothing",
+    "variants": [
+      {
+        "sku": "SKU-VK-SILK-38",
+        "name": "Size 38 (S)"
+      },
+      {
+        "sku": "SKU-VK-SILK-40",
+        "name": "Size 40 (M)"
+      },
+      {
+        "sku": "SKU-VK-SILK-42",
+        "name": "Size 42 (L)"
+      },
+      {
+        "sku": "SKU-VK-SILK-44",
+        "name": "Size 44 (XL)"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "S": {
+          "chest": [
+            37,
+            39
+          ],
+          "waist": [
+            32,
+            34
+          ]
+        },
+        "M": {
+          "chest": [
+            39,
+            41
+          ],
+          "waist": [
+            34,
+            36
+          ]
+        },
+        "L": {
+          "chest": [
+            41,
+            43
+          ],
+          "waist": [
+            36,
+            38
+          ]
+        },
+        "XL": {
+          "chest": [
+            43,
+            45
+          ],
+          "waist": [
+            38,
+            40
+          ]
+        }
+      },
+      "unit": "inches",
+      "fit_type": "festive_tailored",
+      "source_doc": "doc_clothing_kurta_silk (Page 2)"
+    },
+    "docs": [
+      "doc_clothing_kurta_silk"
+    ],
+    "marketing_copy": "Lustrous Tussar silk kurta accentuated with royal zari thread embroidery for grand celebrations."
+  },
+  {
+    "id": "prod_footwear_01",
+    "name": "SprintPro Aero Running Shoes",
+    "brand": "SprintPro Athletic",
+    "category": "footwear",
+    "variants": [
+      {
+        "sku": "SKU-SP-AERO-UK6",
+        "name": "UK-6"
+      },
+      {
+        "sku": "SKU-SP-AERO-UK7",
+        "name": "UK-7"
+      },
+      {
+        "sku": "SKU-SP-AERO-UK8",
+        "name": "UK-8"
+      },
+      {
+        "sku": "SKU-SP-AERO-UK9",
+        "name": "UK-9"
+      },
+      {
+        "sku": "SKU-SP-AERO-UK10",
+        "name": "UK-10"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "UK-6": [
+          24.5,
+          25.0
+        ],
+        "UK-7": [
+          25.1,
+          25.8
+        ],
+        "UK-8": [
+          25.9,
+          26.6
+        ],
+        "UK-9": [
+          26.7,
+          27.5
+        ],
+        "UK-10": [
+          27.6,
+          28.3
+        ]
+      },
+      "gender": "unisex",
+      "source_doc": "doc_footwear_sprintpro (Page 2)"
+    },
+    "docs": [
+      "doc_footwear_sprintpro"
+    ],
+    "marketing_copy": "Engineered for speed, energy return and seamless marathon performance on any road."
+  },
+  {
+    "id": "prod_footwear_02",
+    "name": "UrbanTrek Leather Derby Shoes",
+    "brand": "Oxford & Co.",
+    "category": "footwear",
+    "variants": [
+      {
+        "sku": "SKU-OX-DRB-UK7",
+        "name": "UK-7"
+      },
+      {
+        "sku": "SKU-OX-DRB-UK8",
+        "name": "UK-8"
+      },
+      {
+        "sku": "SKU-OX-DRB-UK9",
+        "name": "UK-9"
+      },
+      {
+        "sku": "SKU-OX-DRB-UK10",
+        "name": "UK-10"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "UK-7": [
+          25.0,
+          25.7
+        ],
+        "UK-8": [
+          25.8,
+          26.5
+        ],
+        "UK-9": [
+          26.6,
+          27.4
+        ],
+        "UK-10": [
+          27.5,
+          28.2
+        ]
+      },
+      "gender": "men",
+      "source_doc": "doc_footwear_derby (Page 2)"
+    },
+    "docs": [
+      "doc_footwear_derby"
+    ],
+    "marketing_copy": "Timeless British styling in polished leather with Goodyear welted durability."
+  },
+  {
+    "id": "prod_footwear_03",
+    "name": "TrailGrip All-Terrain Hiking Boots",
+    "brand": "TrailGrip Outdoors",
+    "category": "footwear",
+    "variants": [
+      {
+        "sku": "SKU-TG-HIK-UK7",
+        "name": "UK-7"
+      },
+      {
+        "sku": "SKU-TG-HIK-UK8",
+        "name": "UK-8"
+      },
+      {
+        "sku": "SKU-TG-HIK-UK9",
+        "name": "UK-9"
+      },
+      {
+        "sku": "SKU-TG-HIK-UK10",
+        "name": "UK-10"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "UK-7": [
+          25.2,
+          25.9
+        ],
+        "UK-8": [
+          26.0,
+          26.7
+        ],
+        "UK-9": [
+          26.8,
+          27.6
+        ],
+        "UK-10": [
+          27.7,
+          28.5
+        ]
+      },
+      "gender": "unisex",
+      "source_doc": "doc_footwear_hiking (Page 2)"
+    },
+    "docs": [
+      "doc_footwear_hiking"
+    ],
+    "marketing_copy": "Waterproof all-weather mountain boots built to conquer rugged trails and steep ascents."
+  },
+  {
+    "id": "prod_footwear_04",
+    "name": "GlideStride Cushioned Walking Sneakers",
+    "brand": "GlideStride Comfort",
+    "category": "footwear",
+    "variants": [
+      {
+        "sku": "SKU-GS-WALK-UK6",
+        "name": "UK-6"
+      },
+      {
+        "sku": "SKU-GS-WALK-UK7",
+        "name": "UK-7"
+      },
+      {
+        "sku": "SKU-GS-WALK-UK8",
+        "name": "UK-8"
+      },
+      {
+        "sku": "SKU-GS-WALK-UK9",
+        "name": "UK-9"
+      }
+    ],
+    "attributes": {
+      "size_chart": {
+        "UK-6": [
+          24.5,
+          25.0
+        ],
+        "UK-7": [
+          25.1,
+          25.8
+        ],
+        "UK-8": [
+          25.9,
+          26.6
+        ],
+        "UK-9": [
+          26.7,
+          27.5
+        ]
+      },
+      "gender": "women",
+      "source_doc": "doc_footwear_glidestride (Page 2)"
+    },
+    "docs": [
+      "doc_footwear_glidestride"
+    ],
+    "marketing_copy": "Cloud-like foam cushioning designed for all-day standing and brisk urban strolls."
+  },
+  {
+    "id": "prod_furniture_01",
+    "name": "Nordic Comfort 3-Seater Fabric Sofa",
+    "brand": "Nordic Living",
+    "category": "furniture",
+    "variants": [
+      {
+        "sku": "SKU-NL-SOFA-GRY",
+        "name": "Ash Grey"
+      }
+    ],
+    "attributes": {
+      "packaged_dimensions_cm": {
+        "length": 180,
+        "width": 85,
+        "height": 75
+      },
+      "assembled_dimensions_cm": {
+        "length": 212,
+        "width": 88,
+        "height": 82
+      },
+      "weight_kg": 52,
+      "source_doc": "doc_furniture_nordic_sofa (Page 2)"
+    },
+    "docs": [
+      "doc_furniture_nordic_sofa"
+    ],
+    "marketing_copy": "Contemporary Scandinavian aesthetic wrapped in soft textured fabric with high-resilience foam."
+  },
+  {
+    "id": "prod_furniture_02",
+    "name": "Modern Oak 2-Door Wardrobe",
+    "brand": "ScanWood Furniture",
+    "category": "furniture",
+    "variants": [
+      {
+        "sku": "SKU-SW-WARD-OAK",
+        "name": "Natural Oak"
+      }
+    ],
+    "attributes": {
+      "packaged_dimensions_cm": {
+        "length": 200,
+        "width": 92,
+        "height": 40
+      },
+      "assembled_dimensions_cm": {
+        "length": 90,
+        "width": 55,
+        "height": 195
+      },
+      "weight_kg": 64,
+      "source_doc": "doc_furniture_wardrobe (Page 2)"
+    },
+    "docs": [
+      "doc_furniture_wardrobe"
+    ],
+    "marketing_copy": "Sleek flat-pack double-door wardrobe with ample hanging clearance and minimalist matte black hardware."
+  },
+  {
+    "id": "prod_furniture_03",
+    "name": "Studio Minimalist Sectional Couch",
+    "brand": "Metro Living",
+    "category": "furniture",
+    "variants": [
+      {
+        "sku": "SKU-ML-SECT-NVY",
+        "name": "Navy Blue"
+      }
+    ],
+    "attributes": {
+      "packaged_dimensions_cm": null,
+      "assembled_dimensions_cm": {
+        "length": 220,
+        "width": 150,
+        "height": 85
+      },
+      "weight_kg": 68,
+      "source_doc": "doc_furniture_studio_couch (Page 2)"
+    },
+    "docs": [
+      "doc_furniture_studio_couch"
+    ],
+    "marketing_copy": "Chic L-shaped modular sectional designed to maximize lounge comfort in trendy loft apartments."
+  },
+  {
+    "id": "prod_furniture_04",
+    "name": "Kavita Solid Teak Dining Table 6-Seater",
+    "brand": "Kavita Timber",
+    "category": "furniture",
+    "variants": [
+      {
+        "sku": "SKU-KT-DINE-TEAK",
+        "name": "Natural Teak Finish"
+      }
+    ],
+    "attributes": {
+      "packaged_dimensions_cm": {
+        "length": 160,
+        "width": 95,
+        "height": 22
+      },
+      "assembled_dimensions_cm": {
+        "length": 150,
+        "width": 90,
+        "height": 76
+      },
+      "weight_kg": 48,
+      "source_doc": "doc_furniture_dining_table (Page 2)"
+    },
+    "docs": [
+      "doc_furniture_dining_table"
+    ],
+    "marketing_copy": "Handcrafted solid Indian teak dining table bringing regal warmth and durability for generations."
+  },
+  {
+    "id": "prod_elec_cartridge_01",
+    "name": "Original HP 67 Black Ink Cartridge",
+    "brand": "HP",
+    "category": "electronics_accessory",
+    "variants": [
+      {
+        "sku": "SKU-HP-67-BLK",
+        "name": "Black Single Pack"
+      }
+    ],
+    "attributes": {
+      "supported_models": [
+        "HP DeskJet 1255",
+        "HP DeskJet 2331",
+        "HP DeskJet 2332",
+        "HP DeskJet 2333",
+        "HP DeskJet 2710",
+        "HP DeskJet 2720",
+        "HP DeskJet 2722",
+        "HP DeskJet 2723",
+        "HP DeskJet 2724",
+        "HP DeskJet 2725",
+        "HP DeskJet 2729",
+        "HP DeskJet 2755",
+        "HP DeskJet Plus 4120",
+        "HP DeskJet Plus 4122",
+        "HP DeskJet Plus 4123",
+        "HP DeskJet Plus 4132",
+        "HP DeskJet Plus 4152",
+        "HP DeskJet Plus 4155",
+        "HP ENVY 6010",
+        "HP ENVY 6020",
+        "HP ENVY 6052",
+        "HP ENVY 6055"
+      ],
+      "cartridge_type": "Pigment Black",
+      "page_yield": 120,
+      "source_doc": "doc_elec_hp67 (Page 2)"
+    },
+    "docs": [
+      "doc_elec_hp67"
+    ],
+    "marketing_copy": "Count on crisp, sharp text and dependable lab-quality document printing page after page."
+  },
+  {
+    "id": "prod_elec_tv_mount_01",
+    "name": "ProMount Heavy-Duty Tilting TV Wall Mount",
+    "brand": "ProMount",
+    "category": "electronics_accessory",
+    "variants": [
+      {
+        "sku": "SKU-PM-TILT-65",
+        "name": "Tilting 32-65 Inch"
+      }
+    ],
+    "attributes": {
+      "supported_vesa": [
+        "100x100",
+        "200x200",
+        "300x300",
+        "400x400"
+      ],
+      "max_weight_kg": 45,
+      "screen_size_range_inches": [
+        32,
+        65
+      ],
+      "source_doc": "doc_elec_tv_mount_promount (Page 2)"
+    },
+    "docs": [
+      "doc_elec_tv_mount_promount"
+    ],
+    "marketing_copy": "Sleek low-profile wall mount featuring 15 degree fingertip tilt to eliminate annoying room glare."
+  },
+  {
+    "id": "prod_elec_tv_mount_02",
+    "name": "UltraSlim Large TV Mount 85\"",
+    "brand": "ProMount",
+    "category": "electronics_accessory",
+    "variants": [
+      {
+        "sku": "SKU-PM-ULTRA-85",
+        "name": "Large Screen 55-85 Inch"
+      }
+    ],
+    "attributes": {
+      "supported_vesa": [
+        "200x200",
+        "400x400",
+        "600x400"
+      ],
+      "max_weight_kg": 75,
+      "screen_size_range_inches": [
+        55,
+        85
+      ],
+      "source_doc": "doc_elec_tv_mount_ultraslim (Page 2)"
+    },
+    "docs": [
+      "doc_elec_tv_mount_ultraslim"
+    ],
+    "marketing_copy": "Reinforced dual-arm steel architecture engineered specifically for monstrous cinema-grade home theater panels."
+  },
+  {
+    "id": "prod_elec_filter_01",
+    "name": "PureAir Post-Motor HEPA Filter for Dyson Vacuums",
+    "brand": "PureAir",
+    "category": "electronics_accessory",
+    "variants": [
+      {
+        "sku": "SKU-PA-DYS-V11",
+        "name": "Single Filter Unit"
+      }
+    ],
+    "attributes": {
+      "supported_models": [
+        "Dyson V11 Absolute",
+        "Dyson V11 Torque Drive",
+        "Dyson V11 Animal",
+        "Dyson V11 Total Clean",
+        "Dyson V15 Detect"
+      ],
+      "filtration_efficiency": "99.97% at 0.3 microns",
+      "source_doc": "doc_elec_dyson_filter (Page 2)"
+    },
+    "docs": [
+      "doc_elec_dyson_filter"
+    ],
+    "marketing_copy": "Restore maximum suction power and trap microscopic dander, dust mites, and fine pollen particles."
+  },
+  {
+    "id": "prod_elec_charger_01",
+    "name": "VoltRapid 65W GaN USB-C PD Fast Charger",
+    "brand": "VoltRapid",
+    "category": "electronics_accessory",
+    "variants": [
+      {
+        "sku": "SKU-VR-GAN-65W",
+        "name": "65W Wall Adapter"
+      }
+    ],
+    "attributes": {
+      "wattage": 65,
+      "connector": "USB-C",
+      "supported_protocols": [
+        "PD 3.0",
+        "QC 4.0",
+        "PPS"
+      ],
+      "input_voltage_range": [
+        100,
+        240
+      ],
+      "source_doc": "doc_elec_charger_65w (Page 2)"
+    },
+    "docs": [
+      "doc_elec_charger_65w"
+    ],
+    "marketing_copy": "Pocket-sized Gallium Nitride power adapter charges laptops, tablets, and phones at blinding speeds."
+  },
+  {
+    "id": "prod_elec_cable_01",
+    "name": "ThunderBolt 4 High-Speed USB-C Cable 2m",
+    "brand": "SpeedSync",
+    "category": "electronics_accessory",
+    "variants": [
+      {
+        "sku": "SKU-SS-TB4-2M",
+        "name": "2 Meter Cable"
+      }
+    ],
+    "attributes": {
+      "wattage": 100,
+      "data_rate_gbps": 40,
+      "connector": "USB-C",
+      "source_doc": "doc_elec_thunderbolt_cable (Page 2)"
+    },
+    "docs": [
+      "doc_elec_thunderbolt_cable"
+    ],
+    "marketing_copy": "Blazing 40Gbps throughput supporting flawless 8K video output and 100W laptop rapid charging."
+  },
+  {
+    "id": "prod_hw_anchor_01",
+    "name": "Shield Anchor Bolt M8 Heavy-Duty",
+    "brand": "ForgeTorque Fixings",
+    "category": "hardware",
+    "variants": [
+      {
+        "sku": "SKU-FT-SA-M8-4PK",
+        "name": "M8 4-Pack"
+      }
+    ],
+    "attributes": {
+      "thread_size": "M8",
+      "load_rating_kg": 150,
+      "material": "Stainless Steel 304",
+      "suitable_substrates": [
+        "concrete",
+        "solid brick",
+        "stone"
+      ],
+      "source_doc": "doc_hw_m8_anchor (Page 2)"
+    },
+    "docs": [
+      "doc_hw_m8_anchor"
+    ],
+    "marketing_copy": "Industrial-grade expanding anchor bolts for mounting heavy structural gates, machinery, and brackets."
+  },
+  {
+    "id": "prod_hw_anchor_02",
+    "name": "Hollow Wall Drywall Anchor M6",
+    "brand": "ForgeTorque Fixings",
+    "category": "hardware",
+    "variants": [
+      {
+        "sku": "SKU-FT-DW-M6-10PK",
+        "name": "M6 10-Pack"
+      }
+    ],
+    "attributes": {
+      "thread_size": "M6",
+      "load_rating_kg": 35,
+      "material": "Zinc Alloy",
+      "suitable_substrates": [
+        "drywall",
+        "plasterboard",
+        "hollow block"
+      ],
+      "source_doc": "doc_hw_m6_drywall (Page 2)"
+    },
+    "docs": [
+      "doc_hw_m6_drywall"
+    ],
+    "marketing_copy": "Self-drilling hollow wall anchors that lock securely behind gypsum board without pre-drilling."
+  },
+  {
+    "id": "prod_hw_bracket_01",
+    "name": "L-Angle Heavy Duty Steel Shelf Bracket",
+    "brand": "TitanStruct",
+    "category": "hardware",
+    "variants": [
+      {
+        "sku": "SKU-TS-BRKT-L",
+        "name": "300x200mm Pair"
+      }
+    ],
+    "attributes": {
+      "thread_size": "M8",
+      "load_rating_kg": 100,
+      "material": "Cold-Rolled Steel",
+      "suitable_substrates": [
+        "concrete",
+        "wood",
+        "brick"
+      ],
+      "source_doc": "doc_hw_bracket_l (Page 2)"
+    },
+    "docs": [
+      "doc_hw_bracket_l"
+    ],
+    "marketing_copy": "Indestructible triangular gusset bracket supporting brutal loads in workshops and commercial storage."
+  },
+  {
+    "id": "prod_hw_bolt_01",
+    "name": "Hex Head Machine Bolt 1/4-20 x 2 inch",
+    "brand": "AccuMetric Fasteners",
+    "category": "hardware",
+    "variants": [
+      {
+        "sku": "SKU-AM-BOLT-1420",
+        "name": "1/4-20 20-Pack"
+      }
+    ],
+    "attributes": {
+      "thread_size": "1/4-20",
+      "load_rating_kg": 80,
+      "material": "Grade 5 Zinc Steel",
+      "source_doc": "doc_hw_bolt_quarter (Page 2)"
+    },
+    "docs": [
+      "doc_hw_bolt_quarter"
+    ],
+    "marketing_copy": "Precision-threaded hex cap screws delivering uncompromising tensile strength for machinery repair."
+  },
+  {
+    "id": "prod_hw_screw_01",
+    "name": "Self-Tapping Masonry Anchor Screws M10",
+    "brand": "ForgeTorque Fixings",
+    "category": "hardware",
+    "variants": [
+      {
+        "sku": "SKU-FT-MS-M10",
+        "name": "M10 8-Pack"
+      }
+    ],
+    "attributes": {
+      "thread_size": "M10",
+      "load_rating_kg": 250,
+      "material": "Carbon Steel",
+      "suitable_substrates": [
+        "concrete",
+        "cinder block",
+        "solid stone"
+      ],
+      "source_doc": "doc_hw_m10_concrete (Page 2)"
+    },
+    "docs": [
+      "doc_hw_m10_concrete"
+    ],
+    "marketing_copy": "Direct-drive concrete screws that carve threads directly into solid masonry for instant high-capacity holding."
+  },
+  {
+    "id": "prod_groc_almond_flour",
+    "name": "Natures Best Organic Almond Flour 500g",
+    "brand": "Nature's Best",
+    "category": "grocery_pharmacy",
+    "variants": [
+      {
+        "sku": "SKU-NB-ALM-500",
+        "name": "500g Pouch"
+      }
+    ],
+    "attributes": {
+      "ingredients": [
+        "blanched almond flour"
+      ],
+      "allergens": [
+        "tree nuts",
+        "almonds"
+      ],
+      "dietary_flags": [
+        "gluten_free",
+        "vegan",
+        "keto",
+        "vegetarian"
+      ],
+      "is_pharmacy": false,
+      "source_doc": "doc_groc_almond (Page 2)"
+    },
+    "docs": [
+      "doc_groc_almond"
+    ],
+    "marketing_copy": "Finely sifted unbleached almond flour delivering nutty richness and wholesome baking texture."
+  },
+  {
+    "id": "prod_groc_oat_milk",
+    "name": "PureHarvest Barista Oat Milk 1L",
+    "brand": "PureHarvest",
+    "category": "grocery_pharmacy",
+    "variants": [
+      {
+        "sku": "SKU-PH-OAT-1L",
+        "name": "1 Liter TetraPak"
+      }
+    ],
+    "attributes": {
+      "ingredients": [
+        "filtered water",
+        "whole grain oats",
+        "cold-pressed sunflower oil",
+        "sea salt"
+      ],
+      "allergens": [
+        "oats"
+      ],
+      "dietary_flags": [
+        "dairy_free",
+        "vegan",
+        "lactose_free",
+        "plant_based"
+      ],
+      "is_pharmacy": false,
+      "source_doc": "doc_groc_oatmilk (Page 2)"
+    },
+    "docs": [
+      "doc_groc_oatmilk"
+    ],
+    "marketing_copy": "Silky barista oat milk engineered to froth into glossy microfoam for cafe-quality lattes."
+  },
+  {
+    "id": "prod_groc_cookies",
+    "name": "Artisan Spelt & Honey Crunch Cookies",
+    "brand": "Artisan Bakery",
+    "category": "grocery_pharmacy",
+    "variants": [
+      {
+        "sku": "SKU-AB-SPELT-200",
+        "name": "200g Box"
+      }
+    ],
+    "attributes": {
+      "ingredients": [
+        "stoneground spelt flour",
+        "salted cream butter",
+        "raw forest honey",
+        "fresh farm eggs",
+        "baking powder"
+      ],
+      "allergens": [
+        "gluten",
+        "wheat",
+        "dairy",
+        "eggs",
+        "milk"
+      ],
+      "dietary_flags": [
+        "vegetarian"
+      ],
+      "is_pharmacy": false,
+      "source_doc": "doc_groc_cookies (Page 2)"
+    },
+    "docs": [
+      "doc_groc_cookies"
+    ],
+    "marketing_copy": "Old-world rustic crunch cookies infused with golden wildflowers honey and churned cream butter."
+  },
+  {
+    "id": "prod_pharm_paracetamol",
+    "name": "Crocin Advance Paracetamol 500mg Fast Relief",
+    "brand": "Crocin Advance",
+    "category": "grocery_pharmacy",
+    "variants": [
+      {
+        "sku": "SKU-CR-PARA-500",
+        "name": "Strip of 15 Tablets"
+      }
+    ],
+    "attributes": {
+      "active_ingredients": [
+        "paracetamol 500mg"
+      ],
+      "inactive_ingredients": [
+        "microcrystalline cellulose",
+        "corn starch",
+        "magnesium stearate",
+        "povidone"
+      ],
+      "allergens": [],
+      "contraindications": [
+        "severe hepatic impairment"
+      ],
+      "dietary_flags": [
+        "gluten_free",
+        "lactose_free",
+        "vegan"
+      ],
+      "is_pharmacy": true,
+      "form": "tablet",
+      "source_doc": "doc_pharm_crocin (Page 2)"
+    },
+    "docs": [
+      "doc_pharm_crocin"
+    ],
+    "marketing_copy": "Optizorb technology enables paracetamol to release in as little as 5 minutes for rapid fever and pain relief."
+  },
+  {
+    "id": "prod_pharm_cetirizine",
+    "name": "Cetzine 10mg Anti-Allergy Tablets",
+    "brand": "Cetzine",
+    "category": "grocery_pharmacy",
+    "variants": [
+      {
+        "sku": "SKU-CZ-CETZ-10",
+        "name": "Strip of 10 Tablets"
+      }
+    ],
+    "attributes": {
+      "active_ingredients": [
+        "cetirizine dihydrochloride 10mg"
+      ],
+      "inactive_ingredients": [
+        "lactose monohydrate",
+        "microcrystalline cellulose",
+        "colloidal anhydrous silica",
+        "magnesium stearate"
+      ],
+      "allergens": [
+        "lactose",
+        "dairy"
+      ],
+      "contraindications": [
+        "end-stage renal disease"
+      ],
+      "dietary_flags": [
+        "gluten_free"
+      ],
+      "is_pharmacy": true,
+      "form": "tablet",
+      "source_doc": "doc_pharm_cetzine (Page 2)"
+    },
+    "docs": [
+      "doc_pharm_cetzine"
+    ],
+    "marketing_copy": "Proven 24-hour non-drowsy relief from allergic rhinitis, watery eyes, sneezing, and hives."
+  }
+]

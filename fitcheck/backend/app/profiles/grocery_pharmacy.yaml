@@ -1,0 +1,28 @@
+category: grocery_pharmacy
+aliases:
+  - grocery
+  - pharmacy
+  - food
+  - medicine
+  - supplement
+  - snack
+  - tablet
+check_types:
+  - suitability
+  - availability
+required_inputs:
+  suitability:
+    - allergens
+attributes_to_check:
+  - ingredients
+  - allergens
+  - dietary_flags
+  - active_ingredients
+  - contraindications
+rule: dietary_allergen_match
+clarifying_questions:
+  allergens: "Do you have any dietary restrictions or food allergies (e.g., gluten, nuts, dairy, vegan)?"
+source_doc_types:
+  - packaging_label
+  - ingredient_statement
+  - package_insert

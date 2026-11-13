@@ -1,0 +1,28 @@
+category: furniture
+aliases:
+  - sofa
+  - couch
+  - wardrobe
+  - table
+  - bed
+  - furniture
+  - cabinet
+  - desk
+check_types:
+  - fit
+  - suitability
+  - availability
+required_inputs:
+  fit:
+    - door_width_cm
+attributes_to_check:
+  - packaged_dimensions_cm
+  - assembled_dimensions_cm
+  - weight_kg
+rule: furniture_clearance_match
+clarifying_questions:
+  door_width_cm: "What is the width of your entry door or narrowest hallway passage in centimeters or inches?"
+source_doc_types:
+  - assembly_manual
+  - packaging_specification
+  - dimensional_drawing
