@@ -345,3 +345,4 @@ export const PRODUCT_QUESTIONNAIRES: Record<string, ProductQuestionnaire> = {
 export function getQuestionnaireForProduct(productId: string): ProductQuestionnaire | null {
   return PRODUCT_QUESTIONNAIRES[productId] || null;
 }
+

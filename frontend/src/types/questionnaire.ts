@@ -43,3 +43,4 @@ export interface ParsedProductUrlResult {
   onlinePriceEst?: number;
   statusMessage: string;
 }
+
