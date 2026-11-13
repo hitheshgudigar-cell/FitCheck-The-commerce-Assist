@@ -1,22 +1,45 @@
 # ==========================================
-# FitCheck — Git Ignore Rules
+# FitCheck Monorepo — Git Ignore Rules
 # ==========================================
 
-# Dependencies
+# ------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+*.pem
+*.key
+*.cert
+
+# ------------------------------------------
+# Node.js & Frontend (Vite + React)
+# ------------------------------------------
 node_modules/
 */node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.pnp
+.pnp.js
 
-# Production Build Artifacts
+# Build Outputs & Deployment Artifacts
 dist/
 */dist/
 dist-ssr/
-*.local
+build/
+.vercel/
 
-# Python & Testing
+# Vite Cache & Temp Files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ------------------------------------------
+# Python & FastAPI Backend
+# ------------------------------------------
 __pycache__/
 */__pycache__/
 */*/__pycache__/
@@ -24,12 +47,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.pytest_cache/
-*/.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.nox/
+*.egg
+*.egg-info/
+.eggs/
 
 # Virtual Environments
 .venv/
@@ -39,20 +59,44 @@ ENV/
 env.bak/
 venv.bak/
 
-# Environment Variables & Secrets
-.env
-.env.local
-.env.*.local
-*.pem
-*.key
+# Testing & Coverage
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage/
+.vitest/
+.mypy_cache/
+.ruff_cache/
 
-# Temporary Browser Profiles & Puppeteer Scratch Dirs
+# ------------------------------------------
+# Database & Temporary SQLite Files
+# ------------------------------------------
+# Exclude journal, WAL, and temp DB locks, but preserve seeded inventory database
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+test_*.db
+scratch_*.db
+
+# ------------------------------------------
+# Temporary Test Profiles & Scratch Dirs
+# ------------------------------------------
 temp_*/
 */temp_*/
 temp_browser_profile/
 */temp_browser_profile/
+fc_prof_*/
 
+# ------------------------------------------
 # Operating System & IDE Files
+# ------------------------------------------
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -61,4 +105,3 @@ desktop.ini
 *.swp
 *.swo
 *~
-
