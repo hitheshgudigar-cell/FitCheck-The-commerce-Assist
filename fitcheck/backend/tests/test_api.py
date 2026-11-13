@@ -70,3 +70,13 @@ def test_api_chat_endpoint():
     assert answer.verdict == "YES"
     assert len(answer.citations) > 0
     assert len(answer.availability) > 0
+
+def test_vercel_entrypoint():
+    import sys
+    from pathlib import Path
+    root_dir = Path(__file__).resolve().parent.parent.parent.parent
+    if str(root_dir) not in sys.path:
+        sys.path.insert(0, str(root_dir))
+    from api.index import app as vercel_app
+    assert vercel_app is not None
+    assert vercel_app.title == "FitCheck API"
